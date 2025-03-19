@@ -46,7 +46,7 @@ export default function Hero() {
           <img 
             src="https://i.pinimg.com/736x/1e/2f/00/1e2f00e8fb302b877dfe5a7a49b85dcd.jpg" 
             alt="Digital design showcase" 
-            className="hero-image "
+            className="hero-image"
           />
         </div>
       </div>

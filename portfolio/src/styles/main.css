@@ -1,0 +1,67 @@
+:root {
+  --gold: #d4af37;
+  --deep-green: #1e2f23;
+  --burgundy: #800020;
+  --velvet-black: #0a0a0a;
+  --marble: linear-gradient(to bottom right, #f8f9fa 0%, #e9ecef 30%, #dee2e6 60%);
+  --vinyl-texture: url('data:image/svg+xml,...<base64-encoded-svg>');
+}
+
+/* Album cover-inspired typography */
+h1, .hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: 0.1em;
+}
+
+/* Luxury motion effects */
+.album-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  }
+}
+
+/* Velvet texture overlay */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--vinyl-texture);
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Navbar visibility styles */
+.vinyl-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  z-index: 10000;
+  border-bottom: 1px solid var(--gold);
+}
+
+/* Emergency visibility overrides */
+.vinyl-nav {
+  opacity: 1 !important;
+  visibility: visible !important;
+  background: #000 !important;
+}
+
+.nav-logo, .nav-links {
+  display: flex !important;
+}
+
+.gold-hover {
+  color: #ffd700 !important;
+  font-size: 20px !important;
+}

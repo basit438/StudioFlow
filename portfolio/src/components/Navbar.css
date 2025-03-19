@@ -27,13 +27,14 @@
   font-weight: 700;
   font-size: 1.75rem;
   letter-spacing: -0.5px;
-  color: var(--dark);
+  color: var(--gold);
   text-decoration: none;
   z-index: 1001;
 }
 
 .logo-text {
   position: relative;
+  color: gray;
 }
 
 .navbar-menu {
@@ -56,7 +57,7 @@
   font-size: 1rem;
   font-weight: 500;
   padding: 0.5rem 1.2rem;
-  color: var(--dark);
+  color: gray;
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
